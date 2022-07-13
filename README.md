@@ -19,9 +19,11 @@
 
 <h3>Google Sheets Format</h3>
 
+<img width="696" alt="sheetsRawData" src="https://user-images.githubusercontent.com/64395142/178630166-1535f10a-9cc9-4386-a557-c7e296f1b4f7.png">
 
 <h3>Email Format</h3>
 
+<img width="689" alt="emailOutput" src="https://user-images.githubusercontent.com/64395142/178630198-f49b6490-f0b1-4e99-8caf-13a2a695901d.png">
 
 <h3>Acknowledgements</h3>
 
