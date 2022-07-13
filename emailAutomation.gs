@@ -52,29 +52,21 @@ function getDataFromSpreadsheet() {
     // Check for the even row where currency figures are used
     if (currencyIndices.includes(i)) {
       rawValues[i][1] = "$" + roundUp(parseFloat(rawValues[i][1]), 1);
-      rawValues[i][2] =
-        convertToPercent(roundUp(parseFloat(rawValues[i][2]), 2)) + "%";
+      
       rawValues[i][3] = "$" + roundUp(parseFloat(rawValues[i][3]), 1);
-      rawValues[i][4] =
-        convertToPercent(roundUp(parseFloat(rawValues[i][4]), 2)) + "%";
+
     } else {
       rawValues[i][1] =
         convertToPercent(roundUp(parseFloat(rawValues[i][1]), 2)) + "%";
-      rawValues[i][2] =
-        convertToPercent(roundUp(parseFloat(rawValues[i][2]), 2)) + "%";
       rawValues[i][3] =
         convertToPercent(roundUp(parseFloat(rawValues[i][3]), 2)) + "%";
-      rawValues[i][4] =
-        convertToPercent(roundUp(parseFloat(rawValues[i][4]), 2)) + "%";
     }
 
-    conditionalIndices.forEach((index) => {
-      if (rawValues[i][index].includes("-")) {
-        rawValues[i].push("red");
-      } else {
-        rawValues[i].push("green");
-      }
-    });
+    rawValues[i][2] =
+        convertToPercent(roundUp(parseFloat(rawValues[i][2]), 2)) + "%";
+      rawValues[i][4] =
+        convertToPercent(roundUp(parseFloat(rawValues[i][4]), 2)) + "%";
+
   }
 
   // console.log({ rawValues })
