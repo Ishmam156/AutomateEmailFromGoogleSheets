@@ -6,7 +6,7 @@
 
 <h3>Tutorial</h3>
 
-[Click to visit](https://www.youtube.com/watch?v=cQnIBitpMDM)
+[Click to view](https://www.youtube.com/watch?v=cQnIBitpMDM)
 
 <h3>This repo contains the following:</h3>
 
