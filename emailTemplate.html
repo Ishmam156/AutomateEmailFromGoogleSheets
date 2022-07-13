@@ -1,0 +1,107 @@
+<div dir="ltr">
+    <div class="gmail_default" style="font-family : calibri , sans-serif">
+        <div class="gmail_default">Hi everyone, </div>
+        <div class="gmail_default">
+            <br>
+        </div>
+        <div class="gmail_default">This is the daily unit economics report for Demo Company for
+            <?= data[0][1] ?>.
+        </div>
+        <div class="gmail_default">
+            <br>
+        </div>
+    </div>
+    <div>
+
+        <div dir="ltr">
+            <table cellspacing="0" cellpadding="0" dir="ltr"
+                style="table-layout:fixed;font-size:10pt;font-family : calibri , sans-serif;width:0px">
+                <colgroup>
+                    <col width="202">
+                    <col width="113">
+                    <col width="113">
+                    <col width="113">
+                    <col width="113">
+                </colgroup>
+                <tbody>
+                    <tr style="height:21px">
+
+                        <!-- Mapping out column headers -->
+
+                        <td
+                            style="border-width:1px;border-style:solid;border-color:rgb(153,153,153);overflow:hidden;padding:2px 3px;vertical-align:bottom;background-color:rgb(252,229,205);font-family:Calibri;font-weight:bold;">
+                            <?= data[0][0] ?>
+                        </td>
+                        <td
+                            style="border-top:1px solid rgb(153,153,153);border-right:1px solid rgb(153,153,153);border-bottom:1px solid rgb(153,153,153);overflow:hidden;padding:2px 3px;vertical-align:bottom;background-color:rgb(252,229,205);font-family:Calibri;font-weight:bold;text-align:center;vertical-align:middle">
+                            <?= data[0][1] ?>
+                        </td>
+                        <td
+                            style="border-top:1px solid rgb(153,153,153);border-right:1px solid rgb(153,153,153);border-bottom:1px solid rgb(153,153,153);overflow:hidden;padding:2px 3px;vertical-align:bottom;background-color:rgb(255,229,205);font-family:Calibri;font-weight:bold;text-align:center;vertical-align:middle">
+                            <?= data[0][2] ?>
+                        </td>
+                        <td
+                            style="border-top:1px solid rgb(153,153,153);border-right:1px solid rgb(153,153,153);border-bottom:1px solid rgb(153,153,153);overflow:hidden;padding:2px 3px;vertical-align:bottom;background-color:rgb(255,242,204);font-family:Calibri;font-weight:bold;text-align:center;vertical-align:middle">
+                            <?= data[0][3] ?>
+                        </td>
+                        <td
+                            style="border-top:1px solid rgb(153,153,153);border-right:1px solid rgb(153,153,153);border-bottom:1px solid rgb(153,153,153);overflow:hidden;padding:2px 3px;vertical-align:bottom;background-color:rgb(255,242,204);font-family:Calibri;font-weight:bold;text-align:center;vertical-align:middle">
+                            <?= data[0][4] ?>
+                        </td>
+                    </tr>
+
+                    <? for(var i = 1; i < data.length; i++) { ?>
+                    <tr style="height:21px">
+
+                        <td
+                            style="border-right:1px solid rgb(153,153,153);border-bottom:1px solid rgb(153,153,153);border-left:1px solid rgb(153,153,153);overflow:hidden;padding:2px 3px;vertical-align:bottom;background-color:rgb(243,243,243);font-family:Calibri;font-weight: bold;font-style: italic;vertical-align:middle">
+                            <?= data[i][0] ?>
+                        </td>
+
+                        <td
+                            style="border-right:1px solid rgb(153,153,153);border-bottom:1px solid rgb(153,153,153);overflow:hidden;padding:2px 3px;vertical-align:bottom;font-family:Calibri;text-align:center;vertical-align:middle">
+                            <?= data[i][1] ?>
+                        </td>
+
+                        <? if (data[i][5] === 'red') { ?>
+                        <td
+                            style="border-right:1px solid rgb(153,153,153);border-bottom:1px solid rgb(153,153,153);overflow:hidden;padding:2px 3px;vertical-align:bottom;background-color:rgb(244,199,195);font-family:Calibri;text-align:center;vertical-align:middle;font-weight:bold">
+                            <?= data[i][2] ?>
+                        </td>
+                        <? } else  { ?>
+                        <td
+                            style="border-right:1px solid rgb(153,153,153);border-bottom:1px solid rgb(153,153,153);overflow:hidden;padding:2px 3px;vertical-align:bottom;background-color:rgb(183,225,205);font-family:Calibri;text-align:center;vertical-align:middle;font-weight:bold">
+                            <?= data[i][2] ?>
+                        </td>
+                        <? } ?>
+
+                        <td
+                            style="border-right:1px solid rgb(153,153,153);border-bottom:1px solid rgb(153,153,153);overflow:hidden;padding:2px 3px;vertical-align:bottom;font-family:Calibri;text-align:center;vertical-align:middle">
+                            <?= data[i][3] ?>
+                        </td>
+
+                        <? if (data[i][6] === 'red') { ?>
+                        <td
+                            style="border-right:1px solid rgb(153,153,153);border-bottom:1px solid rgb(153,153,153);overflow:hidden;padding:2px 3px;vertical-align:bottom;background-color:rgb(244,199,195);font-family:Calibri;text-align:center;vertical-align:middle;font-weight:bold">
+                            <?= data[i][4] ?>
+                        </td>
+                        <? } else  { ?>
+                        <td
+                            style="border-right:1px solid rgb(153,153,153);border-bottom:1px solid rgb(153,153,153);overflow:hidden;padding:2px 3px;vertical-align:bottom;background-color:rgb(183,225,205);font-family:Calibri;text-align:center;vertical-align:middle;font-weight:bold">
+                            <?= data[i][4] ?>
+                        </td>
+                        <? } ?>
+
+                    </tr>
+                    <? } ?>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="gmail_default">
+            <br>
+        </div>
+        <div class="gmail_default"><em>This is an automated email.</em></div>
+        <div class="gmail_default">
+            <br>
+        </div>
